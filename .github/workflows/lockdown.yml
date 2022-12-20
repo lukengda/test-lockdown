@@ -4,7 +4,7 @@ on:
   pull_request_target:
     types: opened
   schedule:
-    - cron: '0 * * * *'
+    - cron: '*/5 * * * *'
 
 permissions:
   pull-requests: write
