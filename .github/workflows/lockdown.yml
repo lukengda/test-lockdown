@@ -3,8 +3,6 @@ name: 'Repo Lockdown'
 on:
   pull_request_target:
     types: opened
-  schedule:
-    - cron: '*/5 * * * *'
 
 permissions:
   pull-requests: write
@@ -16,4 +14,4 @@ jobs:
       - uses: dessant/repo-lockdown@v3
         with:
           process-only: 'pr'
-          pr-comment: 'Unfortunately, we do not accept pull requests on GitHub.'
+          pr-comment: 'This repository does not accept pull requests on Github, see the README.md for details.'
